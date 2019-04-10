@@ -1,5 +1,6 @@
 // Menu Button
 .menu-btn {
+
     position: absolute;
     z-index: 3;
     right: 35px;
@@ -8,11 +9,13 @@
     @include easeOut;
 
     .btn-line {
+
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
         @include easeOut;
+
     }
 
     // Rotate Into X With Menu Lines
@@ -44,7 +47,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.95;
     visibility: hidden;
 
     &.show {
@@ -66,7 +69,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 7);
+        background: linear-gradient(#444, rgb(44, 43, 43));
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -79,7 +82,8 @@
 
     // Branding Side
     &-branding {
-        background: $primary-color;
+        background: linear-gradient(#444, rgb(44, 43, 43));
+        ;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 

@@ -100,7 +100,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/apple.jpg);
@@ -116,7 +116,7 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.8); }
   body:after {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     right: 0;
@@ -124,6 +124,20 @@ body {
     height: 100%;
     z-index: -1;
     background: rgba(68, 68, 68, 0.8); }
+
+body::-webkit-scrollbar {
+  width: 25px; }
+
+body::-webkit-scrollbar-track {
+  background: #444; }
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #4dba0e, #1c4305);
+  border-radius: 15px; }
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #4dba0e, #1c4305);
+  border-radius: 15px; }
 
 h1,
 h2,
@@ -168,10 +182,34 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.title {
+  width: 26ch;
+  overflow: hidden;
+  color: white;
+  white-space: nowrap;
+  border-right: 4px solid #4dba0e;
+  animation: printed-text 4s steps(19), step-start infinite; }
+
+@keyframes flashin-border {
+  0% {
+    border-color: #4dba0e; }
+  50% {
+    border-color: transparent; }
+  100% {
+    border-color: #4dba0e; } }
+
+@keyframes printed-text {
+  from {
+    width: 0%; } }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;

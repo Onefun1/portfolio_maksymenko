@@ -216,11 +216,17 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #4dba0e 3px solid; }
+    .about-info .bio-image:hover {
+      transition: ease all 0.5s;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #4dba0e; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
@@ -232,6 +238,8 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects .item {
+    overflow: hidden; }
   .projects img {
     height: 450px;
     width: 100%;
@@ -239,7 +247,9 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #4dba0e;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+      transition: ease all 0.5s;
+      transform: scale(1.05); }
 
 .boxes {
   display: flex;

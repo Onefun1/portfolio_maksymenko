@@ -1,13 +1,16 @@
 // Download all
 
 // (function() {
-//   const links = ["./CV_Maksymenko_Maksym.pdf", "./CV_Maksymenko_Maksym.docx"];
+//   const links = [
+//     "./docs/CV_Maksym_Maksymenko.pdf",
+//     "./docs/CV_Maksym_Maksymenko.docx"
+//   ];
 //   const div = document.querySelector(".cv-block");
 //   let link = document.createElement("a");
 //   let span = document.createElement("span");
 //   span.classList.add("text-secondary");
 //   span.innerText = "Download";
-//   link.setAttribute("download", "CV_Maksymenko_Maksym");
+//   link.setAttribute("download", "CV_Maksym_Maksymenko");
 //   link.innerText = "CV (*.pdf, *.docx) ";
 //   link.appendChild(span);
 //   div.appendChild(link);
